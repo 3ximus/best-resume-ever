@@ -2,9 +2,11 @@
   <div class="resume" id="resume2">
     <div class="left-column">
       <div>
+		<div class="image center">
+		  <div class="img"></div>
+		</div>
         <div class="headline">
-          <span> {{ person.name.first }} {{ person.name.middle }} </span>
-          <span class="uppercase"> {{ person.name.last }} </span>
+          <span> {{ person.name.first }} {{ person.name.middle }} {{ person.name.last }} </span>
         </div>
 
         <p>
@@ -78,7 +80,7 @@
       </div>
 
       <div class="hobbies-container">
-        <!-- <span class="subheadline">Hobbies</span> -->
+        <span class="subheadline">Hobbies</span>
         <div class="hobbies-content">
           <a v-for="(hobby, index) in person.hobbies" :key="index"
             class="hobby-item"
@@ -209,7 +211,7 @@ export default Vue.component(name, getVueOptions(name));
 
 <style lang="less" scoped>
 
-@accent-color: #A800FA;
+@accent-color: #3c3836;
 
 .resume {
   display: flex;
@@ -347,10 +349,6 @@ a {
 
 .txt-full-white {
   color: white;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .section-headline {
@@ -494,6 +492,20 @@ a {
 
   display: block;
   margin-bottom: 10px;
+}
+.image {
+width:200px;
+height:200px;
+margin-bottom:20px;
+	.img {
+	  width:100%;
+	  height:100%;
+	  border-radius:20%;
+	  background-image:url('../../resume/id.jpg');
+	  background-repeat:none;
+	  background-position:center;
+	  background-size:cover;
+	}
 }
 
 </style>
