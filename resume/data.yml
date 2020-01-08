@@ -1,64 +1,78 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Fabio
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: Almeida
+about: Im curious, committed and at times perfectionist in my work. I like to automate tasks and I strive for efficiency.
+    Also proficient in Adobe Photoshop, Autodesk Maya and other 3D or multimedia software. I can quickly learn any new tool or programming language.
+
+position: Computer Science Engineer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1994
+  location: Portugal
 
 experience:
-- company: Company A
+- company: Sonae Industry
+  position: Summer Intern
+  timeperiod: August 2014
+  # description: Programming and watching cute cat videos.
+  # website: https://example.com
+
+- company: Tekever
+  position: Partnership for my thesis development
+  timeperiod: February 2018 - June 2019
+
+- company: Metafora Notavel
+  position: Part-Time math / programming teacher
+  timeperiod: since 2017
+
+- company: Metafora Notavel
   position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
-
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+  description: Developing student/teacher scheduler and database management. Performing maintenance
+  timeperiod: since December 2019
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: Master Thesis
+  timeperiod: February 2018 - June 2019
+  description: Machine Learning for Network Intrusion Detection Systems in partnership with Tekever, Instituto Superior Tecnico, Lisbon, Portugal
+- degree: Master in Computer Science
+  timeperiod: March 2016 - June 2019
+  description: Major in Computer Security and Machine Learning, Instituto Superior Tecnico, Lisbon, Portugal
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Bachelor in Computer Science
+  timeperiod: March 2012 - December 2017
+  description: Instituto Superior Tecnico, Lisbon, Portugal
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
+- name: Linux
   level: 80
-- name: ES.Next
+- name: Shell Scripting
+  level: 90
+- name: Python
+  level: 95
+- name: C
+  level: 85
+- name: C++ / Java
+  level: 80
+- name: Penetration Testing
+  level: 50
+- name: Reverse Engineering
+  level: 60
+- name: Unreal Engine 4
+  level: 50
+- name: HTML / CSS
+  level: 50
+- name: Javascript
+  level: 50
+- name: Common Lisp
+  level: 60
+- name: SQL
   level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+
+
+knowledge: Native Portuguese speaker and fluent in English
 
 projects:
 - name: best-resume-ever
@@ -67,13 +81,20 @@ projects:
   url: https://github.com/salomonelli/best-resume-ever
 
 hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
+- name: Coding / Linux
+  iconClass: fa fa-code
 
 - name: Drawing
   iconClass: fa fa-pencil
-  url: https://example.com
+
+- name: Playing Guitar
+  iconClass: fa fa-music
+
+- name: Motorcycling / Mountain Biking
+  iconClass: fa fa-bicycle
+
+- name: Travel / Hiking
+  iconClass: fa fa-globe
 
 contributions:
 - name: best-resume-ever
@@ -81,12 +102,10 @@ contributions:
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: fabio4335@gmail.com
+  phone: +351 966 996 041
+  website: www.linkedin.com/in/fabio-r
+  github: 3ximus
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
 `
