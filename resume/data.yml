@@ -3,10 +3,9 @@ name:
   first: Fabio
   middle:
   last: Almeida
-about: Im curious, committed and at times perfectionist in my work. I like to automate tasks and I strive for efficiency.
-    Also proficient in Adobe Photoshop, Autodesk Maya and other 3D or multimedia software. I can quickly learn any new tool or programming language.
+about: Im curious, committed and perfectionist in my work. I like to automate tasks and strive for efficiency.
 
-position: Computer Science Engineer
+position: MSc. Computer Science
 
 birth:
   year: 1994
@@ -48,7 +47,7 @@ education:
 skills:
 - name: Linux
   level: 80
-- name: Shell Scripting
+- name: Bash
   level: 90
 - name: Python
   level: 95
@@ -56,10 +55,8 @@ skills:
   level: 85
 - name: C++ / Java
   level: 80
-- name: Penetration Testing
-  level: 50
-- name: Reverse Engineering
-  level: 60
+- name: Computer Security
+  level: 70
 - name: Unreal Engine 4
   level: 50
 - name: HTML / CSS
@@ -71,14 +68,28 @@ skills:
 - name: SQL
   level: 70
 
+knowledge: Also proficient in Adobe Photoshop, Autodesk Maya and other 3D or multimedia software. I can quickly learn any new tool or programming language.
 
-knowledge: Native Portuguese speaker and fluent in English
+languages:
+- name: Portuguese
+  level: Native
+
+- name: English
+  level: Fluent
+
+- name: Spanish
+  level: Reasonable
 
 # projects:
-# - name: best-resume-ever
-#   platform: Vue
-#   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-#   url: https://github.com/salomonelli/best-resume-ever
+# - name: Vehicle Ad-Hoc Network Security
+#   platform: Java
+#   description: 
+#   url: https://github.com/3ximus/vanet-security
+
+# - name: Zu-Compiler
+#   platform: C++
+#   description: Compiler for the Zu language
+#   url: https://github.com/3ximus/zu-compiler
 
 hobbies:
 - name: Coding / Linux

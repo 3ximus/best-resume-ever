@@ -2,9 +2,9 @@
   <div class="resume" id="resume2">
     <div class="left-column">
       <div>
-		<div class="image center">
-		  <div class="img"></div>
-		</div>
+        <div class="image center">
+          <div class="img"></div>
+        </div>
         <div class="headline">
           <span> {{ person.name.first }} {{ person.name.middle }} {{ person.name.last }} </span>
         </div>
@@ -26,11 +26,13 @@
 
       <a :href="contactLinks.email">
         <div class="block-marged txt-full-white">
+          <i class="fa fa-envelope-o contact-icon"></i>
           {{ person.contact.email }}
         </div>
       </a>
 
       <div class="block-marged txt-full-white">
+        <i class="fa fa-phone contact-icon"></i>
         {{ person.contact.phone }}
       </div>
 
@@ -79,12 +81,21 @@
         </a>
       </div>
 
+      <div class="language-container">
+        <span class="subheadline">Languages</span>
+        <div class="language-content">
+          <a v-for="(language, index) in person.languages" :key="index" class="language-item">
+            <div class="language-name"> {{ language.name }}</div>
+            <div class="language-level">{{ language.level }}</div>
+          </a>
+        </div>
+      </div>
+
       <div class="hobbies-container">
         <span class="subheadline">Hobbies</span>
         <div class="hobbies-content">
           <a v-for="(hobby, index) in person.hobbies" :key="index"
-            class="hobby-item"
-            :href="hobby.url">
+            class="hobby-item">
 
             <i v-if="hobby.iconClass" :class="hobby.iconClass + ' hobby-item__icon'"></i>
             <span class="hobby-item__icon-label"> {{ hobby.name }} </span>
@@ -269,6 +280,7 @@ export default Vue.component(name, getVueOptions(name));
 
   height: 100%;
   width: 65%;
+  margin-top: -20px
 }
 
 a {
@@ -332,12 +344,11 @@ a {
 }
 
 .multi-line-txt {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .social-container {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -451,6 +462,33 @@ a {
   }
 }
 
+.language-container {
+  margin-top: 30px;
+}
+
+.language-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-item {
+  display: grid;
+  grid-template-columns: 30px auto;
+
+  color: rgba(255, 255, 255, .6);
+
+  margin-bottom: 10px;
+}
+
+.language-name {
+    font-weight: bold;
+    position: relative;
+}
+
+.language-level {
+    margin-left: 60px;
+}
+
 .hobbies-container {
   margin-top: 30px;
 }
@@ -486,26 +524,29 @@ a {
   position: relative;
 }
 
+
 .subheadline {
   color: rgba(255, 255, 255, .8);
   font-size: 1.2em;
 
   display: block;
   margin-bottom: 10px;
+  margin-top: 10px
 }
+
 .image {
-width:200px;
-height:200px;
-margin-bottom:20px;
-	.img {
-	  width:100%;
-	  height:100%;
-	  border-radius:20%;
-	  background-image:url('../../resume/id.jpg');
-	  background-repeat:none;
-	  background-position:center;
-	  background-size:cover;
-	}
+    width:200px;
+    height:200px;
+    margin-bottom:20px;
+        .img {
+          width:100%;
+          height:100%;
+          border-radius:20%;
+          background-image:url('../../resume/id.jpg');
+          background-repeat:none;
+          background-position:center;
+          background-size:cover;
+        }
 }
 
 </style>
