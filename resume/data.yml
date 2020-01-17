@@ -12,24 +12,25 @@ birth:
   location: Portugal
 
 experience:
-- company: Sonae Industry
-  position: Summer Intern
-  timeperiod: August 2014
+- company: Metafora Notavel
+  position: Developer
+  description: Developing student/teacher scheduler and database management. Performing maintenance
+  timeperiod: since December 2019
   # description: Programming and watching cute cat videos.
   # website: https://example.com
+
+- company: Metafora Notavel
+  position: Part-Time University Programming/Math Teacher
+  timeperiod: since 2017
 
 - company: Tekever
   position: Partnership for my thesis development
   timeperiod: February 2018 - June 2019
 
-- company: Metafora Notavel
-  position: Part-Time math / programming teacher
-  timeperiod: since 2017
+- company: Sonae Industry
+  position: Summer Intern
+  timeperiod: August 2014
 
-- company: Metafora Notavel
-  position: Developer
-  description: Developing student/teacher scheduler and database management. Performing maintenance
-  timeperiod: since December 2019
 
 education:
 - degree: Master Thesis
@@ -68,7 +69,7 @@ skills:
 - name: SQL
   level: 70
 
-knowledge: Also proficient in Adobe Photoshop, Autodesk Maya and other 3D or multimedia software. I can quickly learn any new tool or programming language.
+knowledge: I can quickly learn any new tool or programming language. Also proficient in Adobe Photoshop, Autodesk Maya and other 3D or multimedia software.
 
 languages:
 - name: Portuguese
